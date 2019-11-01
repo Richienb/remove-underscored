@@ -1,6 +1,6 @@
 {
     "name": "remove-underscored",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Remove keys that start with an underscore from an object or array of objects.",
     "repository": "https://github.com/Richienb/remove-underscored.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",

@@ -1,41 +1,36 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/remove-underscored/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/remove-underscored)
 
-My awesome module.
+Remove keys that start with an underscore from an object or array of objects.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/remove-underscored.png)](https://npmjs.com/package/remove-underscored)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install remove-underscored
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const removeUnderscored = require("remove-underscored");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+removeUnderscored({
+    a: {
+        _a: "a",
+        b: 1
+    },
+    _b: ["b"]
+});
+//=> { a: { b: 1 } }
 ```
 
 ## API
 
-### theModule(input, options?)
+### removeUnderscored(obj)
 
-#### input
+#### obj
 
-Type: `string`
+Type: `object or array`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The object or array to handle.

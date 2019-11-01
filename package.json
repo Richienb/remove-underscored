@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "remove-underscored",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Remove keys that start with an underscore from an object or array of objects.",
+    "repository": "https://github.com/Richienb/remove-underscored.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,17 +11,23 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=6"
     },
     "scripts": {
         "lint": "eslint .",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": [
+        "remove",
+        "filter",
+        "underscored"
+    ],
+    "dependencies": {
+        "remove-if-prefix": "^1.0.1"
+    },
     "devDependencies": {
         "ava": "^2.1.0",
-        "eslint": "^6.5.1",
+        "eslint": "^6.6.0",
         "eslint-config-richienb": "^0.2.0"
     },
     "eslintConfig": {
